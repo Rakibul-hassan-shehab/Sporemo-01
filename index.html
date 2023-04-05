@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>SPOURMO</title>
+  <link rel="stylesheet" href="./assets/index-8284b38b.css">
+</head>
+<body>
+   <header style="background-image: url('data:application/octet-stream;base64,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'); height: 500px; background-repeat: no-repeat; background-size: cover;">
+
+    <div class="container mx-auto">
+
+        <div class="pt-5">
+            <nav class="relative px-4 py-4 flex justify-between items-center bg-lime-500">
+                <a class="
+                text-3xl font-bold leading-none text-white  " href="#">
+                    <span class="text-4xl">S</span>POURMO
+                </a>
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center text-blue-600 p-3">
+                        <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Mobile menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="hidden absolute top-1/2 right-0 transform -translate-y-1/2 -translate-x-10 lg:flex lg:mx-auto  lg:items-center lg:w-auto lg:space-x-6">
+                    <li class="">
+                        <a class="text-xl text-white hover:text-gray-500 font-bold" href="#">HOME</a>
+                    </li>
+                  
+                    <li class="main-li">
+                        <a class="text-xl text-white font-bold hover:text-gray-500" href="#">
+                           PAGES
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="inner-ul bg-lime-500 w-[100px]">
+                            <li class="w-full text-white hover:text-gray-500 font-bold text-xl p-4"><a href="#">ITEM1</a></li>
+                            <li class="w-full text-white hover:text-gray-500 font-bold text-xl p-4"><a href="#">ITEM2</a></li>
+                            <li class="w-full text-white hover:text-gray-500 font-bold text-xl p-4"><a href="#">ITEM3</a></li>
+                        </ul>
+                        
+                    </li>
+                   
+                    <li class="Prent-drop-down">
+                        <a class="text-xl text-white hover:text-gray-500 font-bold" href="#">DROPDOWN 
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="drop-down-item-ul w-[250px] bg-lime-500">
+                            <li class="w-full text-white hover:text-gray-500 font-bold text-xl p-4">
+                                <a href="#">DROPDOWN ITEM 1</a>
+                            </li>
+                            <li class="w-full text-white hover:text-gray-500 font-bold text-xl p-4">
+                                <a href="#">DROPDOWN ITEM 2</a>
+                            </li>
+                            <li class="w-full text-white hover:text-gray-500 font-bold text-xl p-4">
+                                <a href="#">DROPDOWN ITEM 3</a>
+                            </li>
+                            <li class="w-full text-white hover:text-gray-500 font-bold text-xl p-4">
+                                <a href="#">DROPDOWN ITEM 4</a>
+                            </li>
+                            <li class="w-full text-white hover:text-gray-500 font-bold text-xl p-4">
+                                <a href="#">DROPDOWN ITEM 5</a>
+                            </li>
+                        </ul>
+                    </li>
+                   
+                    <li>
+                        <a class="text-xl text-white hover:text-gray-500 font-bold" href="#">LINK TEXT</a>
+                    </li>
+                  
+                    <li>
+                        <a class="text-xl text-white hover:text-gray-500 font-bold" href="#">LINK TEXT</a>
+                    </li>
+                </ul>
+               
+            </nav>
+            <div class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                    <div class="flex items-center mb-8">
+                        <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                            
+                        </a>
+                        <button class="navbar-close">
+                            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Services</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Pricing</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                       
+                        <p class="my-4 text-xs text-center text-gray-400">
+                            <span>Copyright © by RAKIBUL HASSAN 2023</span>
+                        </p>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="mt-[100px]">
+            <h1 class="text-white text-2xl font-bold tracking-wider">
+               <span class="text-3xl">S</span>em Aenean Ligula
+            </h1>
+            <p class="text-white mt-5 font-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quasi  <br> architecto delectus in id! Quis accusamus </p>
+        </div>
+        <div class="mt-5 pl-3 flex gap-5">
+            <a href="#" class="text-white border p-5 rounded-xl bg-lime-500 hover:text-gray-500">VOLUTPAT</a>
+            
+            <a href="#" class="text-white border p-5 rounded-xl hover:bg-lime-500 hover:text-gray-500">CONSEQUAT</a>
+        </div>
+
+        <div class="mt-5 grid justify-center md:grid-cols-2 lg:flex md:justify-evenly md:gap-5  lg:mt-16">
+            <div class="w-[300px]">
+                <img src="./assets/bredg-5da72184.jfif" alt="" class=" w-[300px] ">
+                <div class="mt-0   text-center   bg-lime-500 p-3  w-[300px] text-white " >
+                    <a href="#" class=" text-xl">Bibendum Aenean</a>
+                </div>
+            </div>
+
+            <div class="w-[300px] mt-5 md:mt-0">
+                <img src="./assets/kebord-582b5aab.jfif" alt="" class=" w-[300px]">
+                <div class="mt-0   text-center   bg-lime-500 p-3 w-[300px]  text-white " >
+                    <a href="#" class=" text-xl">Aliquam Eliementum</a>
+                </div>
+            </div>
+
+            <div class="w-[300px] mt-5 md:mt-0">
+                <img src="./assets/foot-331634de.jpg" alt="" class=" w-[300px]">
+                <div class="mt-0   text-center   bg-lime-500 p-3 w-[300px]  text-white " >
+                    <a href="#" class=" text-xl">Aliquam Eliementum</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   </header>
+   <section class="mt-[780px] md:mt-[450px] lg:mt-[250px]">
+    <div class="" style="background-image: url('./assets/bg2-9d37fd79.jfif'); height: 680px; background-repeat: no-repeat; background-size: cover;">
+        <div class="container mx-auto p-20 ">
+            <div class="md:flex justify-around">
+               
+                   <div class="md:mt-20">
+                    <h1 class="text-white text-2xl">Hed Lorem Mauis Cursus</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sint eaque.  <br> laudantium magnam quod ad atque similique est,</p>
+                    <div class="mt-5 ">
+                        <div>
+                            <div class="  flex gap-2 " >
+                                <div>
+                                 <i class="fa-solid fa-equals text-white p-4 bg-lime-500 rounded-full"></i>
+                                </div>
+                                 <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, hic.</p>
+                             </div>
+                             <div class="  flex gap-2 mt-3 " >
+                                 <div>
+                                  <i class="fa-solid fa-equals bg-white p-4 text-lime-500 rounded-full"></i>
+                                 </div>
+                                 <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, hic.</p>
+                             </div>
+                        </div>
+                   </div> 
+                </div>
+                <div class="mt-10">
+                    <img src="./assets/sitting-man-af4427b6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="pt-20">
+    <div class="container mx-auto">
+        <div class="pb-20">
+            <h1 class="text-center">Bibendum vitae quaam orci vutae</h1>
+            <h1 class="text-center text-3xl font-bold">Suscipit Velit Eget Tincidunt</h1>
+        </div>
+        <div class="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 md:gap-0 mb-5 xl:px-40 ">
+            <div class=" w-80 mx-auto text-center border p-3 hover:bg-gray-100 mt-5 overflow-hidden">
+                <i class="fa-solid fa-trash text-lime-500 text-2xl"></i>
+                <h1 class="mt-2 mb-2 text-xl">Risus Velit Vitae</h1>
+                <p class="text-justify mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestias, cupiditate tenetur aspernatur commodi distinctio tempore maxime amet ducimus hic officia accusantium, consequuntur ad, eaque temporibus voluptatibus provident inventore </p>
+                <a href="#" class="text-lime-500">Read More</a>
+            </div>
+
+            <div class=" w-80 mx-auto text-center border p-3 hover:bg-gray-100 mt-5 overflow-hidden">
+                <i class="fa-solid fa-trash text-lime-500 text-2xl"></i>
+                <h1 class="mt-2 mb-2 text-xl">Risus Velit Vitae</h1>
+                <p class="text-justify mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestias, cupiditate tenetur aspernatur commodi distinctio tempore maxime amet ducimus hic officia accusantium, consequuntur ad, eaque temporibus voluptatibus provident inventore </p>
+                <a href="#" class="text-lime-500">Read More</a>
+            </div>
+
+            <div class=" w-80 mx-auto text-center border p-3 hover:bg-gray-100 mt-5">
+                <i class="fa-solid fa-trash text-lime-500 text-2xl"></i>
+                <h1 class="mt-2 mb-2 text-xl">Risus Velit Vitae</h1>
+                <p class="text-justify mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestias, cupiditate tenetur aspernatur commodi distinctio tempore maxime amet ducimus hic officia accusantium, consequuntur ad, eaque temporibus voluptatibus provident inventore </p>
+                <a href="#" class="text-lime-500">Read More</a>
+            </div>
+
+            <div class=" w-80 mx-auto text-center border p-3 hover:bg-gray-100 mt-5">
+                <i class="fa-solid fa-trash text-lime-500 text-2xl"></i>
+                <h1 class="mt-2 mb-2 text-xl">Risus Velit Vitae</h1>
+                <p class="text-justify mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestias, cupiditate tenetur aspernatur commodi distinctio tempore maxime amet ducimus hic officia accusantium, consequuntur ad, eaque temporibus voluptatibus provident inventore </p>
+                <a href="#" class="text-lime-500">Read More</a>
+            </div>
+
+            <div class=" w-80 mx-auto text-center border p-3 hover:bg-gray-100 mt-5">
+                <i class="fa-solid fa-trash text-lime-500 text-2xl"></i>
+                <h1 class="mt-2 mb-2 text-xl">Risus Velit Vitae</h1>
+                <p class="text-justify mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestias, cupiditate tenetur aspernatur commodi distinctio tempore maxime amet ducimus hic officia accusantium, consequuntur ad, eaque temporibus voluptatibus provident inventore </p>
+                <a href="#" class="text-lime-500">Read More</a>
+            </div>
+
+            <div class=" w-80 mx-auto text-center border p-3 hover:bg-gray-100 mt-5">
+                <i class="fa-solid fa-trash text-lime-500 text-2xl"></i>
+                <h1 class="mt-2 mb-2 text-xl">Risus Velit Vitae</h1>
+                <p class="text-justify mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestias, cupiditate tenetur aspernatur commodi distinctio tempore maxime amet ducimus hic officia accusantium, consequuntur ad, eaque temporibus voluptatibus provident inventore </p>
+                <a href="#" class="text-lime-500">Read More</a>
+            </div>
+
+          
+        </div>
+    </div>
+   </section>
+   <section class="bg-slate-100">
+    <div class="container mx-auto mt-10">
+        <div class="text-center pt-20">
+            <h1 class="">Susapit  Vestibulum dolor present</h1>
+            <h1 class="text-center md:text-2xl">
+                Diam Libero  Interdum At Fringilla
+            </h1>
+        </div>
+        <div class="mt-16 justify-center flex md:gap-5">
+            <a href="#" class="text-lime-500">Phatretra</a>
+            <svg width="8" height="22" viewBox="0 0 8 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="7.47434" y1="0.158114" x2="0.474341" y2="21.1581" stroke="black"/>
+            </svg>
+            <a href="#"  class="text-lime-500">Imperdiet</a>
+            <svg width="8" height="22" viewBox="0 0 8 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="7.47434" y1="0.158114" x2="0.474341" y2="21.1581" stroke="black"/>
+                </svg>
+                
+            <a href="#"  class="text-lime-500">Suspendisse</a>
+            <svg width="8" height="22" viewBox="0 0 8 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="7.47434" y1="0.15800" x2="0.474341" y2="21.1581" stroke="black"/>
+                </svg>
+                
+            <a href="#"  class="text-lime-500">Potenti</a>
+        </div>
+        <div class="mt-20 grid justify-center gap-3 md:grid lg:grid-cols-2 lg:grid xl:grid-cols-3 md:justify-center lg:pl-20 lg:gap-16" >
+            <div class="w-80"><img src="./assets/download (1)-aca1e67e.jfif" alt="" class="w-full"></div>
+            <div class="w-80"><img src="./assets/download (2)-66c34242.jfif" alt="" class="w-full"></div>
+            <div class="w-80"><img src="./assets/download (3)-1e0ab2cc.jfif" alt="" class="w-full"></div>
+            <div class="w-80"><img src="./assets/download-7c1f5c69.jfif" alt="" class="w-full"></div>
+            <div class="w-80"><img src="./assets/Swings-730bb52f.webp" alt="" class="w-full"></div>
+            <div class="w-80"><img src="./assets/images (3)-b59c811c.jfif" alt="" class="w-full"></div>
+        </div>
+    </div>
+   </section>
+   <section style="background-image: url('./assets/bg-3-2e75e579.webp');height: 500px; background-repeat: no-repeat; background-size: cover;" class="mt-16">
+    <div class="container mx-auto pt-10 sm:pt-16 sm:p-10 lg:pt-40">
+        <div class="bg-white w-full lg:w-1/2 lg:mx-auto">
+            <div class="p-5 lg:flex lg:gap-5 ">
+                <img src="./assets/profile-image-1976f86f.png" alt="" class="w-24 h-24 rounded-full">
+               <div>
+                <h1 class="text-xl font-bold mt-10 ">RAKIBUL HASSAN .S</h1>
+                <h1>Webdeveloper</h1>
+                <p class="mt-5 mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi praesentium aperiam, tempora quae repudiandae voluptate magni tempore a modi necessitatibus, corporis, ab autem unde. Voluptates sequi adipisci aut saepe harum?</p>
+               </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="bg-slate-100">
+        <div class="container mx-auto">
+            <div class="text-center pt-14 pb-14">
+                <h1>Urna egestas consectetuer nulla</h1>
+                <h1 class="text-xl font-bold">Facilisi Integer Ante Risus</h1>
+            </div>
+            <div class="xl:flex pb-5">
+                <div class="w-full px-10 mt-10">
+                    <img src="./assets/images (3)-b59c811c.jfif" alt="" class="w-full">
+                    <h1 class="text-xl mt-2">Tempor Ultrices Quis Fringilla</h1>
+                    <div>
+                        <i class="fa-solid fa-user"></i> 
+                        <a href="#" class="text-lime-500 pl-2">Admin</a>
+                        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam unde assumenda iusto consequuntur quidem voluptates earum ratione suscipit sunt.</p>
+                        <a href="#" class="text-lime-500">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="w-full px-10 mt-10">
+                    <img src="./assets/images (3)-b59c811c.jfif" alt="" class="w-full">
+                    <h1 class="text-xl mt-2">Tempor Ultrices Quis Fringilla</h1>
+                    <div>
+                        <i class="fa-solid fa-user"></i> 
+                        <a href="#" class="text-lime-500 pl-2">Admin</a>
+                        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam unde assumenda iusto consequuntur quidem voluptates earum ratione suscipit sunt.</p>
+                        <a href="#" class="text-lime-500">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="w-full px-10 mt-10">
+                    <img src="./assets/images (3)-b59c811c.jfif" alt="" class="w-full">
+                    <h1 class="text-xl mt-2">Tempor Ultrices Quis Fringilla</h1>
+                    <div>
+                        <i class="fa-solid fa-user"></i> 
+                        <a href="#" class="text-lime-500 pl-2">Admin</a>
+                        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam unde assumenda iusto consequuntur quidem voluptates earum ratione suscipit sunt.</p>
+                        <a href="#" class="text-lime-500">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+   <footer class="h-4/6 mt-16" style="background-image: url('./assets/small-water-drops-black-background_23-2147828359-826f88bd.avif'); background-repeat: no-repeat; background-size: cover; width: 100%; ">
+    <div class="container mx-auto lg:flex lg:gap-x-10 pt-16">
+        <div class="pt-10 pl-7 basis-[25%]">
+            <h1 class="text-white text-3xl  mb-5">Lorem Proin Volutpat</h1>
+            <p class="text-white  font-bold text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis id libero culpa minima dolorem! Repellendus amet, cumque, vero ullam doloribus adipisci at excepturi tempore est fugit, modi et officia. Beatae expedita corrupti hic ducimus ut amet placeat odio vitae, laboriosam, non aut.</p>
+            <div class="pt-7 flex gap-5 ">
+                <i class="fa-brands fa-square-facebook text-white text-5xl p-2 bg-stone-300"></i>
+                <i class="fa-brands fa-google-plus-g text-white text-5xl p-2 bg-stone-300"></i>
+                <i class="fa-brands fa-linkedin text-white text-5xl p-2 bg-stone-300"></i>
+                <i class="fa-brands fa-twitter text-white text-5xl p-2 bg-stone-300"></i>
+            </div>
+        </div>
+        <div class="basis-[25%] mt-5 p-5">
+            <h1 class="text-white text-3xl mt-5 lg:mb-5 mb-10">Nascetur Ridiculus Mus</h1>
+          <div>
+            <a href="#" class="text-lime-500 text-2xl">Aliquam eget leo praesent</a>
+            <hr class="mt-2">
+          </div>
+          <div class="mt-5">
+            <a href="#" class="text-lime-500 text-2xl">Aliquam eget leo praesent</a>
+            <hr class="mt-2">
+          </div>
+          <div class="mt-5">
+            <a href="#" class="text-lime-500 text-2xl">Aliquam eget leo praesent</a>
+            <hr class="mt-2">
+          </div>
+          <div class="mt-5">
+            <a href="#" class="text-lime-500 text-2xl">Aliquam eget leo praesent</a>
+            <hr class="mt-2">
+          </div>
+        </div>
+        <div class="mt-10 basis-[25%] p-5">
+            <h1 class="text-white text-3xl">Vestibulum Sed Quam</h1>
+            <h1 class="text-slate-200 text-xl mt-5">Ante dapibus luctus sed quis diam vitae ipsum ultrices vehicula.</h1>
+            <form action="#" class="mt-10 ">
+                <input type="text" name="name" id="" placeholder="Name" class="w-full h-16 rounded-xl pl-5 text-2xl mb-5  focus:bg-lime-500">
+                <input type="email" name="name" id="" placeholder="Email" class="w-full h-16 rounded-xl pl-5 text-2xl mb-5 focus:bg-lime-500 focus:border-none">
+                <button class="p-4 bg-lime-500 text-3xl text-white rounded-xl">SUBMIT</button>
+            </form>
+        </div>
+        <div class="basis-[25%] p-5">
+            <div class="grid grid-cols-3 mt-10 gap-5">
+                <img src="./assets/download (1)-aca1e67e.jfif" alt="">
+                <img src="./assets/download (2)-66c34242.jfif" alt="">
+                <img src="./assets/download (3)-1e0ab2cc.jfif" alt="">
+                <img src="./assets/images (1)-7f18deac.jfif" alt="">
+                <img src="./assets/images (2)-713936e9.jfif" alt="">
+                <img src="./assets/images (3)-b59c811c.jfif" alt="">
+                <img src="./assets/Swings-730bb52f.webp" alt="">
+                <img src="./assets/bredg-5da72184.jfif" alt="">
+                <img src="./assets/foot-331634de.jpg" alt="">
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="container mx-auto">
+        <hr class="mt-20 mb-20">
+        <div class="flex gap-5 flex-wrap justify-center">
+            <i class="fa-solid fa-house hover:text-lime-500 text-white text-2xl"></i>
+            <a href="#" class="text-white text-2xl hover:text-lime-500">ABOUT</a>
+            <a href="#" class="text-white text-2xl hover:text-lime-500">CONTACT</a>
+            <a href="#" class="text-white text-2xl hover:text-lime-500">TERMS</a>
+            <a href="#" class="text-white text-2xl hover:text-lime-500">PRIVACY</a>
+            <a href="#" class="text-white text-2xl hover:text-lime-500">COOKIES</a>
+            <a href="#" class="text-white text-2xl hover:text-lime-500">DISCLAIMER</a>
+        </div>
+        <hr class="mt-20 mb-10">
+        <div>
+            <p class="text-white p-5 text-3xl font-bold">
+                Copyright &#169; 2023 All Right by RAKIBUL HASSAN
+            </p>
+        </div>
+    </div>
+   </footer>
+   <script>
+    // Burger menus
+    document.addEventListener('DOMContentLoaded', function() {
+        // open
+        const burger = document.querySelectorAll('.navbar-burger');
+        const menu = document.querySelectorAll('.navbar-menu');
+    
+        if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+                burger[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+    
+        // close
+        const close = document.querySelectorAll('.navbar-close');
+        const backdrop = document.querySelectorAll('.navbar-backdrop');
+    
+        if (close.length) {
+            for (var i = 0; i < close.length; i++) {
+                close[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+    
+        if (backdrop.length) {
+            for (var i = 0; i < backdrop.length; i++) {
+                backdrop[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+    });
+    </script>
+</body>
+</html>
